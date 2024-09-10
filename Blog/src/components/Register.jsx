@@ -16,7 +16,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/authors/register', { name, email, password });
+      await axios.post('https://blog-web-tau-taupe.vercel.app/api/authors/register', { name, email, password });
       navigate('/signin');
     } catch (error) {
       setError('Error during registration');

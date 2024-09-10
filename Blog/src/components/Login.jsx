@@ -12,7 +12,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const { data } = await axios.post('http://localhost:5000/api/authors/login', {
+      const { data } = await axios.post('https://blog-web-tau-taupe.vercel.app/api/authors/login', {
         email,
         password,
       });

@@ -8,7 +8,7 @@ const ArticleContainer = (props) => {
 
   const handleEdit = async (updatedArticle) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/articles/${updatedArticle._id}`, {
+      const response = await fetch(`https://blog-web-tau-taupe.vercel.app/api/articles/${updatedArticle._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

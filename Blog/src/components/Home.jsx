@@ -16,7 +16,7 @@ const Home = () => {
   useEffect(() => {
     const fetchArticles = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/articles/');
+        const response = await axios.get('https://blog-web-tau-taupe.vercel.app/api/articles/');
         setArticles(response.data);
         setFilteredArticles(response.data);
       } catch (error) {

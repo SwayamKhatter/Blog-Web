@@ -9,7 +9,7 @@ const ArticleDetail = () => {
   useEffect(() => {
     const fetchArticle = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/articles/${id}`);
+        const response = await axios.get(`https://blog-web-tau-taupe.vercel.app/api/articles/${id}`);
         setArticle(response.data);
       } catch (error) {
         console.error('Error fetching article:', error);

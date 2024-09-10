@@ -25,7 +25,7 @@ const MyArticles = () => {
     }
 
     try {
-      const response = await axios.get('http://localhost:5000/api/articles/my-articles', {
+      const response = await axios.get('https://blog-web-tau-taupe.vercel.app/api/articles/my-articles', {
         headers: { 'Authorization': token },
       });
       setArticles(response.data);
@@ -42,7 +42,7 @@ const MyArticles = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/articles/${id}`, {
+      const response = await fetch(`https://blog-web-tau-taupe.vercel.app/api/articles/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ const MyArticles = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/articles/${id}`, {
+      const response = await fetch(`https://blog-web-tau-taupe.vercel.app/api/articles/${id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json',
