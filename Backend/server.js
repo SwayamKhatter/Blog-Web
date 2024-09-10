@@ -19,6 +19,13 @@ const articleRoutes = require('./routes/articles');
 const authorRoutes = require('./routes/authors');
 app.use('/api/articles', articleRoutes);
 app.use('/api/authors', authorRoutes);
+app.use('/',
+
+  (req, res) => {
+    res.status(200).json({ message: 'Hello World!' });
+  }
+
+)
 
 // Error handling middleware
 app.use((err, req, res, next) => {
